@@ -40,3 +40,31 @@ In order to achieve this we aim to
 
 # To be done by tommorow: 
  - working of the django download button on the final output screen.
+
+
+# Basic Steps to Run the Code:
+
+
+```bash
+clone the repo
+```
+
+```bash
+pip install -r requirements.txt
+```
+> Refer requirements_NOTE.txt
+
+
+```bash
+python manage.py migrate
+```
+
+```bash
+python manage.py makemigrations
+```
+
+```bash
+python manage.py runserver
+```
+
+> Run at `http://127.0.0.1:8000/OCR712/`

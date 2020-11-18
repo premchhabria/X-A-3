@@ -1,0 +1,3 @@
+If google apis installation doesnt works,
+refer:
+https://cloud.google.com/vision/docs/ocr
