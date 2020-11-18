@@ -31,7 +31,7 @@ In order to achieve this we aim to
    ![](DOCS/RawOCRextract.png)
   - Using pandas and python we extract usefull information from these converted text. Basically, we extract variables from the text documents and create columns for a excel file based on them for easy readability and comparision between multiple 7/12 Extracts.
    ![](DOCS/FinalExcelOutput.png)
-  - ![FINAL EXCEL](output.xlsx)
+  - [FINAL EXCEL](output.xlsx)
  
 # Advantages!
  - In our opinion the biggest advantage we provide is the multiple file support => EXCEL as this will be helpfull for the NGO to compare thousands of 7/12 extracts at a glance using excel functionalities. 
