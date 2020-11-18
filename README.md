@@ -21,16 +21,16 @@ In order to achieve this we aim to
 ![](DOCS/homePage.png)
 
 ### Temp download page(IN PROGRESS)
-![](DOCS/tempDownloadButtons.png)
+![](DOCS/TempDownloadButtons.png)
 
 # Our Features!
 
   - Upload singular or multiple Saath Baara Utara pdfs at once using drag and drop or browse.
-  - ![](DOCS/selected.png)
+   ![](DOCS/selected.png)
   - Google ocr converts each of these files to a text document in devnagri script
-  - ![](DOCS/rawOCRextract.png)
+   ![](DOCS/RawOCRextract.png)
   - Using pandas and python we extract usefull information from these converted text. Basically, we extract variables from the text documents and create columns for a excel file based on them for easy readability and comparision between multiple 7/12 Extracts.
-  - ![](DOCS/FinalExcelOutput.png)
+   ![](DOCS/FinalExcelOutput.png)
  
 # Advantages!
  - In our opinion the biggest advantage we provide is the multiple file support => EXCEL as this will be helpfull for the NGO to compare thousands of 7/12 extracts at a glance using excel functionalities. 
