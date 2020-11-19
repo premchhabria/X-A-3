@@ -26,32 +26,51 @@ def txt2df():
                 flag = 0
             if "अहवाल दिनांक" in myline and date=="":
                 print("FOUND date")
-                temp= myline.split(":",1)[1].replace(" ","")
+                try:
+                    temp= myline.split(":",1)[1].replace(" ","")
+                    date=(temp)
+                    print(temp)
+                except Exception as e:
+                    print("dinank ",e)
                 
-                date=(temp)
-                print(temp)
+                
                 # df= df.append({"अहवाल दिनांक":temp})
                 # print(df)
             elif "जिल्हा" in myline and jilha=="":
                 print("FOUND jilha")
-                temp= myline.split(":-",1)[1].replace(" ","")
-                print(temp)
-                jilha=(temp)
+                try:
+                    temp= myline.split(":-",1)[1].replace(" ","")
+                    print(temp)
+                    jilha=(temp)
+                except Exception as e:
+                    print("jilha ",e)
+                
             elif "गाव :" in myline and gav=="":
                 print("FOUND gav")
-                temp= myline.split(":-",1)[1].replace(" ","")
-                print(temp)
-                gav=(temp)
+                try:
+                    temp= myline.split(":-",1)[1].replace(" ","")
+                    print(temp)
+                    gav=(temp)
+                except Exception as e:
+                    print("gav ",e)
+                
             elif "क्रमांक व उपविभाग :" in myline and gutKrmank=="":
                 print("FOUND gutKrmank")
-                temp= myline.split(":",1)[1].replace(" ","")
-                print(temp)
-                gutKrmank=(temp)
+                try:
+                    temp= myline.split(":",1)[1].replace(" ","")
+                    print(temp)
+                    gutKrmank=(temp)
+                except Exception as e:
+                    print("kramank ",e)
             elif "तालुका" in myline and taluka=="":
                 print("FOUND taluka")
-                temp= myline.split(":-",1)[1].replace(" ","")
-                print(temp)
-                taluka=(temp)
+                try:
+                    temp= myline.split(":-",1)[1].replace(" ","")
+                    print(temp)
+                    taluka=(temp)
+                except Exception as e:
+                    print("taluka ",e)
+                
             elif ("2017" in myline) or ("2018" in myline) or ("2019" in myline)or ("2020" in myline)or ("2016" in myline)or ("2015" in myline)or ("2014" in myline)or ("2013" in myline)or ("2012" in myline)or ("2011" in myline):
             #or "2013" or "2014" or "2015" or "2016" or "2017" or "2018" or "2019" or "2020" :
                 print("found crop")
@@ -115,6 +134,8 @@ def sample_batch_annotate_files(file_path="input2.pdf"):
 #     else:
 #         print("invalid i/p")
 
+# import wget
+
 def test():
     filesPath = "D:\\TP_PROGS\\Projects\\CodeForChangeHackathon2020\\progs\\OCRCFC2020\\media\\documents"
     # BASE_DIR = os.path.join( os.path.dirname( filesPath ), '..' )
@@ -127,13 +148,28 @@ def test():
         try:
             sample_batch_annotate_files(temp)
             txt2df()
-        except:
-            print("path error")
+        except Exception as e:
+            print("path error ",e)
+    print(df)
+    try:
+        os.remove("D:\\TP_PROGS\\Projects\\CodeForChangeHackathon2020\\progs\\OCRCFC2020\\output.xlsx")
+        print("EXCEL REMOVEDDDDD")
+    except:
+        print("no file to remove")
     try:
         df.to_excel("output.xlsx") 
         print("your excel is ready!!!!!!")
+        df.drop(df.index, inplace=True)
     except:
         print("close excel then rerun")
+    
+    
+
+    # print('Beginning file download with wget module')
+
+    # url = 'D:\\TP_PROGS\\Projects\\CodeForChangeHackathon2020\\progs\\OCRCFC2020\\output.xlsx'
+    # wget.download(url, 'C:\\')
+
 
 
 
