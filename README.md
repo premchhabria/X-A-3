@@ -6,7 +6,7 @@
 
 
 # Hosted Link:
-http://caaca1b72e90.ngrok.io/OCR712/
+http://caaca1b72e90.ngrok.io/OCR712/ [ please use the choose file button, hosting was causing issues with drag and drop :) ]
 
 >This projectis aimed at helping the **Global Parli Foundation** in their mission to improve rural India through a replicable model of Rural Rejuvenation.
 
