@@ -4,6 +4,10 @@
 
 [![Windows](https://img.shields.io/badge/platform-windows--64-brightgreen)]() [![sed](https://img.shields.io/badge/Interactive%20-Django_Website-green)]()
 
+
+# Hosted Link:
+http://caaca1b72e90.ngrok.io/OCR712/
+
 >This projectis aimed at helping the **Global Parli Foundation** in their mission to improve rural India through a replicable model of Rural Rejuvenation.
 
 In order to achieve this we aim to
