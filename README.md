@@ -1,7 +1,6 @@
 # Saath Baara Utara OCR, The 7/12 OCR
 
 ## By X Æ A-3
-)
 
 >This projectis aimed at helping the **Global Parli Foundation** in their mission to improve rural India through a replicable model of Rural Rejuvenation.
 
